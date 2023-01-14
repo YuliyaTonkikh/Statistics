@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dbd2aa53-98fa-4f4e-9f40-2885e686f7e4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/stats/StatsServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/stats/StatsServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,25 +55,11 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
+      <command value="mvn clean verify" />
       <command value="mvn clean test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StatsServiceTest.testAverageSale">
-    <configuration name="StatsServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Statistics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.stats.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.stats" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.stats.StatsServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.StatsServiceTest.testSalesBelowAverege">
     <configuration name="StatsServiceTest.testAverageSale" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Statistics" />
       <extension name="coverage">
@@ -106,22 +92,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StatsServiceTest.testSalesBelowAverege" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Statistics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.stats.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.stats" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.stats.StatsServiceTest" />
-      <option name="METHOD_NAME" value="testSalesBelowAverege" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="StatsServiceTest.testSum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Statistics" />
       <extension name="coverage">
@@ -138,13 +108,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StatsServiceTest.testSalesAboveAverege" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Statistics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.stats.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.stats" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.stats.StatsServiceTest" />
+      <option name="METHOD_NAME" value="testSalesAboveAverege" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StatsServiceTest.testSalesBelowAverege" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Statistics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.stats.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.stats" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.stats.StatsServiceTest" />
+      <option name="METHOD_NAME" value="testSalesBelowAverege" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.StatsServiceTest.testSalesBelowAverege" />
+        <item itemvalue="TestNG.StatsServiceTest.testSalesAboveAverege" />
         <item itemvalue="JUnit.StatsServiceTest.testAverageSale" />
         <item itemvalue="JUnit.StatsServiceTest.testSum" />
         <item itemvalue="JUnit.StatsServiceTest.testMinimummumSale" />
-        <item itemvalue="JUnit.StatsServiceTest" />
-        <item itemvalue="JUnit.StatsServiceTest.testSalesBelowAverege" />
       </list>
     </recent_temporary>
   </component>

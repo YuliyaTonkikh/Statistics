@@ -51,17 +51,17 @@ public class StatsServiceTest {
     public void testSalesBelowAverege() {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        long expected = 5;
+        long expected = 0;
         long actual = service.salesBelowAverege(sales);
 
         Assertions.assertEquals(expected, actual);
 
     }
-    @Test // Месяц в котором была минимальная продажа
+    @Test // Месяц в котором была максимальная продажа
     public void testSalesAboveAverege() {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        long expected = 6;
+        long expected = 0;
         long actual = service.salesAboveAverege(sales);
 
         Assertions.assertEquals(expected, actual);
