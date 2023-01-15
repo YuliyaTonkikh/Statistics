@@ -13,7 +13,7 @@ public class StatsServiceTest {
         long expected = 8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7 + 14 + 14 + 18;
         long actual = 180;
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test // Средняя сумма продаж в месяц
@@ -37,6 +37,7 @@ public class StatsServiceTest {
         Assertions.assertEquals(expected, actual);
 
     }
+
     @Test // Месяц в котором была минимальная продажа
     public void testMinimummumSale() {
         StatsService service = new StatsService();
@@ -47,27 +48,28 @@ public class StatsServiceTest {
         Assertions.assertEquals(expected, actual);
 
     }
-    @Test // Месяц в котором была минимальная продажа
+
+    @Test // Количество месяцев, в которых продажи были ниже среднего
     public void testSalesBelowAverege() {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        long expected = 0;
+        long expected = 5;
         long actual = service.salesBelowAverege(sales);
 
         Assertions.assertEquals(expected, actual);
 
     }
-    @Test // Месяц в котором была максимальная продажа
+
+    @Test // Количество месяцев, в которых продажи были выше среднего
     public void testSalesAboveAverege() {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        long expected = 0;
+        long expected = 5;
         long actual = service.salesAboveAverege(sales);
 
         Assertions.assertEquals(expected, actual);
 
     }
-
 
 
 }
